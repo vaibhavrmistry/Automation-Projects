@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SpotifyTests]">
+  <test name="Login(failed)">
+    <classes>
+      <class name="com.spotify.test.login.LoginTest">
+        <methods>
+          <include name="invalidUserTest1"/>
+          <include name="validUserTestWithRememberMe"/>
+          <include name="checkRememberMe"/>
+          <include name="checkWithoutRememberMe"/>
+          <include name="facebookUserTest"/>
+          <include name="setupTest"/>
+          <include name="validUserTestWithoutRememberMe"/>
+        </methods>
+      </class> <!-- com.spotify.test.login.LoginTest -->
+      <class name="com.spotify.test.login.PlayTest">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="betweenTests"/>
+        </methods>
+      </class> <!-- com.spotify.test.login.PlayTest -->
+      <class name="com.spotify.test.login.SearchTest">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.spotify.test.login.SearchTest -->
+      <class name="com.spotify.test.login.AddtoMySongsTest">
+        <methods>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.spotify.test.login.AddtoMySongsTest -->
+    </classes>
+  </test> <!-- Login(failed) -->
+  <test name="Search(failed)">
+    <classes>
+      <class name="com.spotify.test.login.LoginTest">
+        <methods>
+          <include name="setupTest"/>
+        </methods>
+      </class> <!-- com.spotify.test.login.LoginTest -->
+      <class name="com.spotify.test.login.PlayTest">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="betweenTests"/>
+        </methods>
+      </class> <!-- com.spotify.test.login.PlayTest -->
+      <class name="com.spotify.test.login.SearchTest">
+        <methods>
+          <include name="searchResultsWithEnterKeyTest" invocation-numbers="0"/>
+          <include name="beforeClass"/>
+          <include name="searchArtistSearchResultsTest" invocation-numbers="0"/>
+          <include name="searchArtistSuggestionTest" invocation-numbers="0"/>
+          <include name="afterClass"/>
+          <include name="searchRecentTest"/>
+        </methods>
+      </class> <!-- com.spotify.test.login.SearchTest -->
+      <class name="com.spotify.test.login.AddtoMySongsTest">
+        <methods>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.spotify.test.login.AddtoMySongsTest -->
+    </classes>
+  </test> <!-- Search(failed) -->
+  <test name="AddSong(failed)">
+    <classes>
+      <class name="com.spotify.test.login.LoginTest">
+        <methods>
+          <include name="setupTest"/>
+        </methods>
+      </class> <!-- com.spotify.test.login.LoginTest -->
+      <class name="com.spotify.test.login.PlayTest">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="betweenTests"/>
+        </methods>
+      </class> <!-- com.spotify.test.login.PlayTest -->
+      <class name="com.spotify.test.login.AddtoMySongsTest">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="removeFromMySongs"/>
+          <include name="addToMySongs"/>
+        </methods>
+      </class> <!-- com.spotify.test.login.AddtoMySongsTest -->
+      <class name="com.spotify.test.login.SearchTest">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.spotify.test.login.SearchTest -->
+    </classes>
+  </test> <!-- AddSong(failed) -->
+</suite> <!-- Failed suite [SpotifyTests] -->
